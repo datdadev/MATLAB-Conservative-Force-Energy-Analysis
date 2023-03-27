@@ -18,7 +18,7 @@ This project is for educational purposes only and should not be used for commerc
 ## Getting Started
 
 1. Clone the repository to your local machine.
-2. Run the [app.mlapp](https://github.com/datdadev/MATLAB-Conservative-Force-Energy-Analysis/blob/main/app.mlapp) GUI file by typing `app` in the command window.
+2. Manually run the [app.mlapp](https://github.com/datdadev/MATLAB-Conservative-Force-Energy-Analysis/blob/main/app.mlapp) GUI file by clicking the "Run" button in the App Designer toolbar.
 3. In the GUI window, enter the initial position, velocity, mass, and conservative force parameters.
 4. Click the "Graph" button in the GUI window to compute the kinetic and potential energies of the particle and plot them on the GUI.
 5. Experiment with different parameter values by adjusting the sliders and clicking the "Graph" button again.
