@@ -2,7 +2,7 @@
 
 ## About
 
-This MATLAB project provides a tool for analyzing the energy of a particle under the influence of conservative forces. The conservative force is defined by an expression that depends only on the starting and ending positions of the particle's motion, and the potential energy can be calculated using this expression. The project includes both a script and a GUI for calculating the kinetic and potential energy of the particle as functions of time and provides a graphical representation of the results.
+[This MATLAB project](https://github.com/datdadev/MATLAB-Conservative-Force-Energy-Analysis/blob/main/pdfs/topic.pdf) provides a tool for analyzing the energy of a particle under the influence of conservative forces. The conservative force is defined by an expression that depends only on the starting and ending positions of the particle's motion, and the potential energy can be calculated using this expression. The project includes both a script and a GUI for calculating the kinetic and potential energy of the particle as functions of time and provides a graphical representation of the results.
 
 <img src="images/preview.png" width="500">
 
