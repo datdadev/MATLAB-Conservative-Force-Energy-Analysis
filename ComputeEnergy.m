@@ -10,8 +10,8 @@ function ComputeEnergy(app)
     q = app.qEditField.Value;                                               % q coefficient (N/m^3)
     m = app.mEditField.Value;                                               % Mass (kg)
     v = app.vEditField.Value;                                               % Velocity (m/s)
-    x = app.xEditField.Value;                                               % Displacement (m)
     t = app.tEditField.Value;                                               % Total time (s)
+    x = app.xEditField.Value;                                               % Displacement (m)
 
     %@ Read kinetic and potential energy check boxes' values to 
     % determine whether to show the respective plots
