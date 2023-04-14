@@ -164,8 +164,8 @@ FACULTY OF APPLIED SCIENCE
 \setlength{\cftbeforesecskip}{0.65em}
 \setlength{\cftbeforesubsecskip}{0.65em}
 \renewcommand\cftsecaftersnum{.}
-\cftsetindents{section}{1.25cm}{2.75em}
-\cftsetindents{subsection}{1.85cm}{1.35em}
+\cftsetindents{section}{1.25cm}{3.5em}
+\cftsetindents{subsection}{2.15cm}{1.35em}
 
 \renewcommand{\cftchapfont}{\normalfont\LARGE\bfseries} % \chapter font in ToC
 \renewcommand{\cftsecfont}{\normalfont\bfseries\LARGE}  % \section font in ToC
@@ -228,9 +228,10 @@ Using MATLAB, we will implement the Euler-Cromer method to compute the motion of
 
 \newpage
 \section{MATLAB Code and Explanation}
+
 The project consists of two parts: the application UI and the Matlab script.
 
-\subsection{Application user interface (UI) \texttt{app.mlapp}\protect\footnote[6]{Source code of \texttt{app.mlapp}: \texttt{\url{https://github.com/datdadev/MATLAB-Conservative-Force-Energy-Analysis/blob/main/app.mlapp}}.}}
+\subsection[Application user interface (UI) \texttt{app.mlapp}]{Application user interface (UI) \texttt{app.mlapp}\protect\footnote[1]{Source code of \texttt{app.mlapp}: \url{https://github.com/datdadev/MATLAB-Conservative-Force-Energy-Analysis/blob/main/app.mlapp}.}}
 % The complete source code can be accessed at the following URL: \texttt{\url{https://github.com/datdadev/MATLAB-Conservative-Force-Energy-Analysis/blob/main/app.mlapp}}
 
 This portion of the MATLAB code contains six methods that handle component events for the graphical user interface (GUI) including:
@@ -303,7 +304,7 @@ end
 \end{itemize}
 The \texttt{AboutButtonPushed} method handles the event of the user clicking the \texttt{About} button. It opens a web page about the project on GitHub in the default browser.
 
-\subsection{Matlab script \texttt{ComputerEnergy.m}\protect\footnote[7]{Source code of \texttt{ComputerEnergy.m}: \texttt{\url{https://github.com/datdadev/MATLAB-Conservative-Force-Energy-Analysis/blob/main/ComputeEnergy.m}}.}}
+\subsection[Matlab script \texttt{ComputerEnergy.m}]{Matlab script \texttt{ComputerEnergy.m}\protect\footnote[1]{Source code of \texttt{ComputerEnergy.m}: \url{https://github.com/datdadev/MATLAB-Conservative-Force-Energy-Analysis/blob/main/ComputeEnergy.m}.}}
 % The complete source code can be accessed at the following URL: \texttt{\url{https://github.com/datdadev/MATLAB-Conservative-Force-Energy-Analysis/blob/main/ComputeEnergy.m}}
 
 This MATLAB program calculates the kinetic and potential energy of a particle subject to a conservative force. It retrieves input values from the application UI \texttt{app.mlapp} and generates plots of energy over time directly within the application.
@@ -417,6 +418,29 @@ The \texttt{drawnow} function is used to display the created plot(s). The \textt
 \end{itemize}
 
 \newpage
+\section{General Information}
+\subsection{Requirements}
+\begin{itemize}[leftmargin=0.65cm,itemsep=0.15cm]
+    \item MATLAB R2019b or later\footnote[1]{MATLAB: \url{https://www.mathworks.com/products/matlab.html}.}
+    \item MATLAB Symbolic Math Toolbox\footnote[2]{MATLAB Symbolic Math Toolbox: \url{https://www.mathworks.com/products/symbolic.html}.}
+\end{itemize}
+\subsection{Installation}
+\begin{enumerate}[leftmargin=0.6cm,itemindent=0.05cm]
+    \item Clone the repository to your local machine.
+    \item Manually run the \texttt{app.mlapp} GUI file by clicking the \texttt{Run} button in the App Designer toolbar.
+    \item In the GUI window, enter the initial position, velocity, mass, and conservative force parameters.
+    \item Click the \texttt{Graph} button in the GUI window to compute the kinetic and potential energies of the particle and plot them on the GUI.
+    \item Experiment with different parameter values by adjusting the sliders and clicking the \texttt{Graph} button again.
+\end{enumerate}
+
+\subsection{Features}
+\begin{itemize}[leftmargin=0.65cm,itemsep=0.25cm]
+    \item \textbf{Enhanced User Interface:} The application provides a user-friendly interface, which eliminates the need to manually input commands into the \texttt{.m} script. The application UI streamlines the process of energy analysis, enabling users to easily select options and input data.
+    \item \textbf{Instant Graphing:} The energy analyst application allows users to graph their data instantly, without having to regenerate new axes. This means that users can quickly visualize their data as soon as they change the parameter values and press the \texttt{Graph} button, without any delay or interruption in the graphing process.
+    \item \textbf{Energy Visibility Controls:} The app includes checkboxes for controlling the visibility of kinetic and potential energy data. This allows users to focus on specific energy types or combinations and switch between energy visualizations for a deeper understanding of the data.
+\end{itemize}
+
+\newpage
 \section{Results and Discussion}
 \begin{figure}[!htb]
     \centering
@@ -436,7 +460,7 @@ The \texttt{drawnow} function is used to display the created plot(s). The \textt
 
 With the given initial parameters, the MATLAB simulation successfully calculated the kinetic and potential energies of the particle moving under the influence of the conservative force expressed as $F(x) = kx - 4qx^3$. The simulation results matched the theoretical values computed manually, confirming the accuracy of the simulation. Furthermore, we can also replace appropriately many others values of quantities to study other special cases.
 
-\vspace{0.25cm}
+\vspace{0.2cm}
 
 This is the user interface for the energy graphing simulation application:
 
@@ -456,7 +480,9 @@ In conclusion, this MATLAB project demonstrated how to numerically calculate the
 \section{References}
 \vspace{0.25cm}
 \begin{itemize}[leftmargin=-0.655cm, label=]
-    \nocite{*}%
-    \printbibliography[heading=none]
+    \begin{otherlanguage}{vietnamese}
+        \nocite{*}%
+        \printbibliography[heading=none]
+    \end{otherlanguage}
 \end{itemize}
 \end{document}
