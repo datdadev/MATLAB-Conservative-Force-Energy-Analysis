@@ -136,8 +136,10 @@ FACULTY OF APPLIED SCIENCE
 
 \begin{otherlanguage}{vietnamese}
 \begin{tabbing}
-	\hspace{2.35cm}Lecturer \ \ \ \ \ \ \ \ \ \ \ \=: \textbf{\parbox[t]{9cm}{Dr. Nguyễn Xuân Thanh Trâm}}\\
-	\hspace{2.35cm}Subject \>: \textbf{\parbox[t]{9cm}{General Physics 1 (Exercise)}}\\
+	\hspace{2.35cm}Lecturer \ \ \ \ \ \ \ \ \ \ \ \=: \textbf{\parbox[t]{9cm}{Dr. Nguyễn Trung Hậu}}\\
+ \> \ \ \textbf{\parbox[t]{9cm}{
+		Dr. Nguyễn Xuân Thanh Trâm}} \\
+	\hspace{2.35cm}Subject \>: \textbf{\parbox[t]{9cm}{General Physics 1}}\\
 	\hspace{2.35cm}Class \>: \textbf{\parbox[t]{9cm}{CC03}}\\
 	\hspace{2.35cm}Group \>: \textbf{\parbox[t]{9cm}{02}}\\
 	\hspace{2.35cm}Members \>: \textbf{\parbox[t]{5.25cm}{
@@ -473,6 +475,38 @@ This is the user interface for the energy graphing simulation application:
   \label{fig:result}
 \end{figure}
 
+\newpage
+By replacing the other initial parameters, we can analyze the state of energy at various points during the motion of an object. For instance, let's change those values by inputting them directly into the app's input fields: $k=2\text{ N/m}$, $q=0.2\text{ N/m}^3$, $m=2\text{ kg}$, $v=1\text{ m/s}$, $t=10\text{ s}$, and $x=0.5\text{ m}$. Then, click the \texttt{Graph} button to observe the plot for the purpose of studying and analyzing it. The resulting plot should resemble the figure below:
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[scale=0.25]{result1.png}
+  \vspace{-0.35cm}
+  \caption{Another example and the result}
+  \label{fig:result}
+\end{figure}
+
+\vspace{0.15cm}
+Trying out different variables, specifically, $k=3\text{ N/m}$, $q=0.35\text{ N/m}^3$, $m=2\text{ kg}$, $v=5\text{ m/s}$, $t=5\text{ s}$, and $x=5\text{ m}$. The resulting plot may present some difficulty as two wavy plots will stack on top of each other. To address this, users can utilize the \texttt{K.E.} and \texttt{P.E.} checkboxes to control the visibility of kinetic and potential energy, facilitating analysis of the desired plot. The figures below demonstrate the different energy plot visibilities:
+
+\vspace{0.2cm}
+\begin{figure}[!htb]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale=0.21]{result2_1.png}
+  \vspace{-0.75cm}
+        \caption{Example with kinetic energy visibility}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[scale=0.21]{result2_2.png}
+  \vspace{-0.75cm}
+        \caption{Example with potential energy visibility}
+    \end{minipage}
+\end{figure}
+
+\newpage
 \section{Conclusion}
 In conclusion, this MATLAB project demonstrated how to numerically calculate the kinetic and potential energies of a particle moving under the influence of a conservative force. Using the Euler-Cromer method, we were able to accurately compute the motion of the particle and observe that the total energy in the system, which is the sum of kinetic and potential energies, is conserved. The project also allowed us to visualize the changes in kinetic and potential energies over time using MATLAB plots. By adjusting the initial parameters, we were able to explore other special cases and observe how the system behaves under different conditions. Overall, this project provided a valuable insight into numerical methods and their application in solving physical problems.
 
