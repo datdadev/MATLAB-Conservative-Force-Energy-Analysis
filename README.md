@@ -15,7 +15,7 @@ This project is for educational purposes only and should not be used for commerc
 - [MATLAB R2019b or later](https://www.mathworks.com/products/matlab.html)
 - [MATLAB Symbolic Math Toolbox](https://www.mathworks.com/products/symbolic.html)
 
-## Getting Started
+## Usage
 
 1. Clone the repository to your local machine.
 2. Manually run the [app.mlapp](https://github.com/datdadev/MATLAB-Conservative-Force-Energy-Analysis/blob/main/app.mlapp) GUI file by clicking the "Run" button in the App Designer toolbar.
